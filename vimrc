@@ -56,5 +56,5 @@ set cindent         "Like smartindent, but stricter and more customisable
 
 set mousemodel=extend " Enable mouse support
 
-
+set paste			" prevent auto-indent etc from affecting text pasted into vim
 
