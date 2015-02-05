@@ -1,0 +1,8 @@
+! Swap caps lock and escape
+! put this dotfile in home dir
+! then run xmodmap .speedswapper
+! And put this in .xinitrc to keep on startup.
+remove Lock = Super_L
+keysym Escape = Super_L
+keysym Super_L = Escape
+add Lock = Super_L
