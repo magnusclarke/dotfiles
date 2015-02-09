@@ -1,5 +1,8 @@
 # Install dotfiles as symbolic links
 # Moves existing dotfiles to 'OLDdotfile' 
+# You can change default shell to/from zsh with:
+# chsh -s $(which zsh)
+# Then log out and in again
 
 #!/bin/bash
 

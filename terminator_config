@@ -41,11 +41,10 @@
     background_color = "#404040"
     cursor_blink = False
     scrollback_infinite = True
-  # Default is solarised dark
   [[default]]
     scrollbar_position = hidden
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
-    custom_command = tmux new-session -d; tmux split-window -h -p 80; tmux select-pane -t 0; tmux split-window -v -p 25; tmux attach-session -d
+    custom_command = zsh
     use_system_font = False
     cursor_color = "#eee8d5"
     foreground_color = "#eee8d5"
@@ -79,6 +78,7 @@
     [[[child1]]]
       type = Terminal
       parent = window0
+      profile = default
     [[[window0]]]
       type = Window
       parent = ""
