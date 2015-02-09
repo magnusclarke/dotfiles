@@ -1,0 +1,85 @@
+[global_config]
+  enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+[keybindings]
+[profiles]
+  [[solarized-dark]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    custom_command = zsh
+    use_system_font = False
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    use_custom_command = True
+    show_titlebar = False
+    font = Monospace 12
+    background_color = "#002b36"
+    cursor_blink = False
+    scrollback_infinite = True
+  [[solarized-light]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    custom_command = zsh
+    use_system_font = False
+    cursor_color = "#002b36"
+    foreground_color = "#002b36"
+    use_custom_command = True
+    show_titlebar = False
+    font = Monospace 12
+    background_color = "#eee8d5"
+    cursor_blink = False
+    scrollback_infinite = True
+  [[zenburn]]
+    scrollbar_position = hidden
+    palette = "#53dccd:#ff8080:#22c0ff:#ffcc66:#6f906c:#ffffa0:#ffcc66:#acc1ac:#000000:#ed0b0b:#9393cc:#ff5cbf:#cae682:#5c80ff:#8acccf:#56ed0b"
+    custom_command = zsh
+    use_system_font = False
+    cursor_color = "#dededb"
+    foreground_color = "#dededb"
+    use_custom_command = True
+    show_titlebar = False
+    font = Monospace 12
+    background_color = "#404040"
+    cursor_blink = False
+    scrollback_infinite = True
+  # Default is solarised dark
+  [[default]]
+    scrollbar_position = hidden
+    palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    custom_command = tmux new-session -d; tmux split-window -h -p 80; tmux select-pane -t 0; tmux split-window -v -p 25; tmux attach-session -d
+    use_system_font = False
+    cursor_color = "#eee8d5"
+    foreground_color = "#eee8d5"
+    use_custom_command = True
+    show_titlebar = False
+    font = Monospace 12
+    background_color = "#002b36"
+    cursor_blink = False
+    scrollback_infinite = True
+  [[OLDdefault]]
+    use_system_font = False
+    font = Monospace 12
+    background_color = "#300a24"
+    foreground_color = "#ffffff"
+  [[Zenburn2]]
+    scrollbar_position = hidden
+    palette = "#4d4d4d:#705050:#60b48a:#f0dfaf:#506070:#dc8cc3:#8cd0d3:#dcdccc:#709080:#dca3a3:#c3bf9f:#e0cf9f:#94bff3:#ec93d3:#93e0e3:#ffffff"
+    background_image = None
+    custom_command = zsh
+    use_system_font = False
+    cursor_color = "#73635a"
+    foreground_color = "#dcdccc"
+    use_custom_command = True
+    show_titlebar = False
+    font = Monospace 12
+    background_color = "#3f3f3f"
+    cursor_blink = False
+    scrollback_infinite = True
+[layouts]
+  [[default]]
+    [[[child1]]]
+      type = Terminal
+      parent = window0
+    [[[window0]]]
+      type = Window
+      parent = ""
+[plugins]
