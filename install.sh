@@ -12,7 +12,11 @@ BASEDIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 mv ~/.vimrc ~/.OLDvimrc
 ln -s ${BASEDIR}/vimrc ~/.vimrc
 
-# bashrcba
+# tmux
+mv ~/.tmux.conf ~/.OLDtmux.conf
+ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
+
+# bashrc
 mv ~/.bashrc ~/.OLDbashrc
 ln -s ${BASEDIR}/bashrc ~/.bashrc
 

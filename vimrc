@@ -48,6 +48,7 @@ set incsearch
 
 set shiftwidth=4    " indent by 4 spaces with >>, == etc
 set softtabstop=4   "Indent by 4 spaces when pressing <TAB>
+set tabstop=4
 set smarttab
 
 set autoindent      "Keep indentation from previous line
