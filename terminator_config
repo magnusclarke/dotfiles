@@ -1,10 +1,12 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
+  window_state = fullscreen
 [keybindings]
 [profiles]
   [[solarized-dark]]
     scrollbar_position = hidden
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_image = None
     custom_command = zsh
     use_system_font = False
     cursor_color = "#eee8d5"
@@ -18,6 +20,7 @@
   [[solarized-light]]
     scrollbar_position = hidden
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    background_image = None
     custom_command = zsh
     use_system_font = False
     cursor_color = "#002b36"
@@ -30,27 +33,30 @@
     scrollback_infinite = True
   [[zenburn]]
     scrollbar_position = hidden
-    palette = "#53dccd:#ff8080:#22c0ff:#ffcc66:#6f906c:#ffffa0:#ffcc66:#acc1ac:#000000:#ed0b0b:#9393cc:#ff5cbf:#cae682:#5c80ff:#8acccf:#56ed0b"
+    palette = "#53dccd:#ff8080:#00597e:#6f66ff:#6f906c:#ffffa0:#ff8422:#acc1ac:#000000:#ed0b0b:#9393cc:#ff5cbf:#cae682:#5c80ff:#8acccf:#56ed0b"
+    background_image = None
     custom_command = zsh
     use_system_font = False
     cursor_color = "#dededb"
     foreground_color = "#dededb"
     use_custom_command = True
     show_titlebar = False
-    font = Monospace 12
+    font = Monospace 15
     background_color = "#404040"
     cursor_blink = False
     scrollback_infinite = True
   [[default]]
     scrollbar_position = hidden
     palette = "#073642:#dc322f:#859900:#b58900:#268bd2:#d33682:#2aa198:#eee8d5:#002b36:#cb4b16:#586e75:#657b83:#839496:#6c71c4:#93a1a1:#fdf6e3"
+    visible_bell = True
+    background_image = None
     custom_command = zsh
     use_system_font = False
     cursor_color = "#eee8d5"
     foreground_color = "#eee8d5"
     use_custom_command = True
     show_titlebar = False
-    font = Monospace 12
+    font = Monospace 14
     background_color = "#002b36"
     cursor_blink = False
     scrollback_infinite = True
@@ -58,6 +64,7 @@
     use_system_font = False
     font = Monospace 12
     background_color = "#300a24"
+    background_image = None
     foreground_color = "#ffffff"
   [[Zenburn2]]
     scrollbar_position = hidden
@@ -69,7 +76,7 @@
     foreground_color = "#dcdccc"
     use_custom_command = True
     show_titlebar = False
-    font = Monospace 12
+    font = Monospace 15
     background_color = "#3f3f3f"
     cursor_blink = False
     scrollback_infinite = True
