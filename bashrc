@@ -1,5 +1,11 @@
 # .bashrc
 
+# Nice short prompt.
+# \e and ze[m begin and end colours
+# 0;36 specifies colour
+# \W is short pwd
+PS1="\e[0;31m\W %\e[m "
+
 # Source global definitions
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
