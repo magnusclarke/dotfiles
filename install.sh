@@ -15,6 +15,7 @@ ln -s ${BASEDIR}/vimrc ~/.vimrc
 # tmux
 mv ~/.tmux.conf ~/.OLDtmux.conf
 ln -s ${BASEDIR}/tmux.conf ~/.tmux.conf
+ln -s ${BASEDIR}/pow.sh ~/.pow.sh
 
 # bashrc
 mv ~/.bashrc ~/.OLDbashrc

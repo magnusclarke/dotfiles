@@ -1,6 +1,5 @@
 [global_config]
   enabled_plugins = LaunchpadCodeURLHandler, APTURLHandler, LaunchpadBugURLHandler
-  window_state = fullscreen
 [keybindings]
 [profiles]
   [[solarized-dark]]
@@ -48,6 +47,7 @@
     use_system_font = False
     font = Monospace 12
     background_color = "#300a24"
+    background_image = None
     foreground_color = "#ffffff"
   [[default2]]
     scrollbar_position = hidden

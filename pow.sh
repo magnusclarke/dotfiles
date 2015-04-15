@@ -1,0 +1,1 @@
+upower -i $(upower -e | grep battery) | grep --color=never -E "percentage" | sed 's/    percentage:          //'
