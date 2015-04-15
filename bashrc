@@ -11,7 +11,23 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# ---------------------------------------------------
+# Git aliases
+# ---------------------------------------------------
+
+alias ga='git add -A'
+alias gul = 'git pull'
+alias gsh='git push'
+alias gs='git status'
+alias gd='git diff'
+alias gc='git commit -m'
+
+# --------------------------------------------------
+
+# ---------------------------------------------------
 # Source Red Hat developer toolkit
+# ---------------------------------------------------
+
 source /opt/rh/devtoolset-2/enable
 
 # User specific aliases and functions
@@ -21,3 +37,12 @@ scl_gcc() {
 }
 
 alias gcc9=scl_gcc
+
+scl_gpp() {
+	gpp_var="g++ $@"
+	scl enable devtoolset-2 "$gpp_var"
+}
+
+alias gpp9=scl_gpp
+
+# ---------------------------------------------------
