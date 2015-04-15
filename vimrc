@@ -1,19 +1,11 @@
 ﻿" Magnus' vimrc file
-" Aug 2014
 " 'imap' provides a mapping that only maps in insert mode
 " Caps lock and Esc are swapped in gnome with System, Preferences, Keyboard, Layouts, Layout Options.
+"Plugins: AutoComplPop to give IDE-like auto-popping-up-auto-completion menus
 
 " Position cursor with mouse in visual mode.
 set mouse=a
  
-" Use filetype-specific settings, found in .vim/ftplugin/R.vim, etc
-filetype plugin on
-autocmd FileType tex let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-autocmd FileType R let g:SuperTabDefaultCompletionType = "<tab>"
-set wildmenu
-" you can also toggle through the matches by tab
-set wildmode=list:longest,full
-
 " Make /-style searches case-sensitive only if includes captical letter
 set ignorecase
 set smartcase
@@ -27,15 +19,12 @@ nnoremap <C-y> 3<C-y>
 
 " filetype-sensitive auto-indent
 filetype indent on
- 
-"let g:SuperTabDefaultCompletionType = '<tab>'
 
 "Manage multiple buffers effectively
 set hidden
 
 "Extend command history
 set history=1000
-
 
 " Set line numbers on
 "set number
@@ -49,13 +38,8 @@ set incsearch
 set shiftwidth=4    " indent by 4 spaces with >>, == etc
 set softtabstop=4   "Indent by 4 spaces when pressing <TAB>
 set tabstop=4
-set smarttab
 
 set autoindent      "Keep indentation from previous line
 set smartindent     "Automatically inserts indentation in some cases
-set cindent         "Like smartindent, but stricter and more customisable
 
 set mousemodel=extend " Enable mouse support
-
-set paste			" prevent auto-indent etc from affecting text pasted into vim
-

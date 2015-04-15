@@ -16,7 +16,7 @@ fi
 # ---------------------------------------------------
 
 alias ga='git add -A'
-alias gul = 'git pull'
+alias gul='git pull'
 alias gsh='git push'
 alias gs='git status'
 alias gd='git diff'
