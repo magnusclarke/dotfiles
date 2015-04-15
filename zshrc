@@ -13,6 +13,24 @@ export PATH="/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:
 source $ZSH/oh-my-zsh.sh
 
 # ---------------------------------------------------
+# RedHat developer toolkit aliases (for new GCC)
+# ---------------------------------------------------
+
+scl_gcc() {
+	gcc_var="gcc $@"
+	scl enable devtoolset-2 "$gcc_var"
+}
+
+alias gcc9=scl_gcc
+
+scl_gpp() {
+	gpp_var="g++ $@"
+	scl enable devtoolset-2 "$gpp_var"
+}
+
+alias gpp9=scl_gpp
+
+# ---------------------------------------------------
 # Git aliases
 # ---------------------------------------------------
 
